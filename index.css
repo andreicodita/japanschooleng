@@ -1,0 +1,332 @@
+body{
+    background-color: #46403B;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+
+.navbar{
+    background: #46403B;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19.2px;
+    position: sticky;
+    top: -5px;
+    z-index: 999;
+}
+
+@font-face {
+    font-family: font;
+    src: url(fonts/OtomanopeeOne-Regular.ttf);
+}
+
+*{
+    font-family: font;
+}
+
+
+@media screen and (max-width: 1024px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar_container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5 ease;
+        z-index: -10;
+    }
+
+    .navbar_menu.active{
+        background: #46403B;
+        top: 90%;
+        opacity: 1;
+        transition: all 0.5 ease;
+        z-index: 99;
+        font-size: 25.6px;
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar_toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #EEEEFF;
+    }
+
+    .navbar_item{
+        width: 100%;
+    }
+
+
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar_toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+ 
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    hr{
+        height: 5px;
+        border: none;
+        color: aliceblue;
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .navbar_menu li{
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+    }
+
+    .navbar_menu a{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        padding: 15px;
+        color: #EEEEFF;
+        text-decoration: none;
+    }
+
+    .navbar_menu{
+        position: absolute;
+        right: 0px;
+        top: 90%;
+        background-color: #46403B;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 10;
+        font-size: 25.6px;
+    }
+  
+    #blur.is-active {
+       -webkit-filter: blur(3px);
+       -moz-filter: blur(3px);
+        -ms-filter: blur(3px);
+         -o-filter: blur(3px);
+            filter: blur(3px);
+        
+
+    }
+    
+    .sitename{
+        margin-right: auto;
+        margin-left: 5px;
+        margin-top: 2vh;
+        text-align: center;
+        color: aliceblue;
+        letter-spacing: 2px;
+        font-size: 22px;
+    }
+
+    .img-bgr{
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: 0;
+        margin-bottom: 0;
+    }
+
+    #blur.is-active .img-bgr{
+        display: none;
+    }
+      
+    .img-bgr2{
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+        margin-bottom: 0;
+    }
+
+    .image{
+        margin-top: 40%;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: auto;
+    }
+
+    .image1{
+        margin-top: 5%;
+        position: absolute;
+        z-index: 3;
+        width: 30%;
+        height: auto;
+    }
+
+    p{
+        margin-top: 45%;
+        position: absolute;
+        line-height: 1.5rem;
+        z-index: 3;
+        text-align: center;
+        font-size: large;
+    }
+
+    .container .eng{
+        margin-top: 60%;
+        position: absolute;
+        z-index: 3;
+        margin-left: 23%;
+        margin-right: auto;
+    }
+
+
+    .card {
+        margin-top: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        position: relative;
+        display: block;
+        z-index: 4;
+        width: 85vw;
+        height: auto;
+        border-radius: 30px;
+        background: #EEEEFF;
+        box-shadow: 15px 15px 15px rgb(25, 25, 25),
+                    -15px -5px 15px rgb(60, 60, 60);
+        text-align: center;
+       }
+
+    .card2 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        position: relative;
+        display: block;
+        z-index: 4;
+        width: 85vw;
+        height: auto;
+        border-radius: 30px;
+        background: #EEEEFF;
+        box-shadow: 15px 15px 15px rgb(25, 25, 25),
+                    -15px -5px 15px rgb(60, 60, 60);
+        text-align: center; 
+       }
+    
+    .card p{
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 1.5rem;
+        margin-bottom: 10px;
+        position: relative;
+        text-align: left;
+        padding: 7px;
+    }
+
+    .card2 p{
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 1.5rem;
+        margin-bottom: 5px;
+        position: relative;
+        text-align: left;
+        padding: 7px;
+    }
+
+    .text{
+        display: block;
+        height: auto;
+    }
+
+    .img-0{
+        width: 30%;
+        float: left;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 15px;
+    }
+
+    .card2 .img-1{
+        width: 80%;
+    }
+
+    .img-1{
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        max-height: 400px;
+        margin-bottom: 7%;
+        border-style: outset;
+        border-radius: 20px;
+        border-color: #4606E8;
+    }
+
+    .text-img{
+        display: flex;
+    }
+}
+
+.sitename{
+    margin-right: auto;
+    margin-left: 5px;
+    margin-top: 2vh;
+    margin-bottom: 5px;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
