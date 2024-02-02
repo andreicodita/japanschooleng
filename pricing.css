@@ -1,0 +1,101 @@
+@media screen and (max-width: 1024px){
+
+    .card-basic{
+      margin-top: 55%;
+      margin-bottom: 30px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 5;
+      padding: 0 0 0.5rem 0;
+      width: 80%;
+      background: #EEEEFF;
+      color: #131313;
+      text-align: center;
+      border-radius: 1rem;
+      border-style: none;
+      box-shadow: 15px 15px 15px rgb(25, 25, 25),
+                        -15px -5px 15px rgb(60, 60, 60);
+      overflow: hidden;
+    }
+
+    .text{
+      margin-top: 0;
+      position: absolute;
+      margin-left: 15%;
+      margin-right: auto;
+      color: #EEEEFF;
+    }
+
+
+
+    .card-basic2{
+        margin-top: 0;
+        margin-bottom: 30px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 5;
+        padding: 0 0 0.5rem 0;
+        width: 80%;
+        background: #EEEEFF;
+        color: #131313;
+        text-align: center;
+        border-radius: 1rem;
+        box-shadow: 15px 15px 15px rgb(25, 25, 25),
+                          -15px -5px 15px rgb(60, 60, 60);
+        overflow: hidden;
+      }
+
+    .card-header {
+      margin: 0;
+      height: 5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 1rem 0;
+      color: #EEEEFF;
+      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    }
+
+    .card-header1{
+        height: auto;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 0.6rem;
+        padding: 1rem 0;
+        color: #EEEEFF;
+    }
+
+
+    .header-basic1{
+        background: linear-gradient(135deg,#224741,#527871);
+      }
+
+    .header-basic{
+      background: linear-gradient(135deg,#527871, #224741);
+    }
+
+    .card-body {
+      padding: 0.5rem 0;
+    }
+    .card-body h2 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .card-element-container {
+      color: #131313;
+      list-style: none;
+      font-size: 1.5rem;
+    }
+
+    .card-element-hidden {
+      display: none;
+    }
+
+    .image{
+        margin-top: -6%;
+    }
+  } 

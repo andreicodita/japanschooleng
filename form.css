@@ -1,0 +1,36 @@
+p {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+  }
+
+
+  .card {
+    border-style: solid;
+    border-width: 10px;
+    border-color: #000000;
+    padding: 10px;
+    margin: 10px;
+    z-index: 3;
+  }
+
+  form{
+    position: absolute;
+    margin-top: 75%;
+    z-index: 5;
+    margin-left: 25%;
+    margin-right: auto;
+  }
+
+  #fileToUpload{
+    margin-top: 20px;
+  }
+
+  #submitButton{
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: #3D9E00;
+    border-style: outset;
+    border-color: #eeeeff;
+  }

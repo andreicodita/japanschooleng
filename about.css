@@ -4,21 +4,44 @@
     }
 
     .image{
-        margin-top: 100%;
+        margin-top: 75%;
+    }
+
+    .card{
+        margin-top: 75%;
     }
 
     .card, .card2{
-        background: #604524;
+        background: transparent;
         color: #EEEEFF;
+        box-shadow: none;
     }
 
     .img-1{
         width: 95%;
     }
 
+    .img-bgr2{
+        margin-top: 30%;
+    }
+
     #blur.is-active .img-bgr{
         margin-top: -12%;
         display: block;
+        z-index: 1;
+    }
+
+    #blur.is-active .img-bgr2{
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    #blur.is-active .container{
+        background: transparent;
+    }
+
+    .img-1{
+        border-color: #3D9E00;
     }
 
 }

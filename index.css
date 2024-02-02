@@ -307,24 +307,26 @@ body{
         margin-bottom: 7%;
         border-style: outset;
         border-radius: 20px;
-        border-color: #4606E8;
+        border-color: #3D9E00;
     }
 
     .text-img{
         display: flex;
     }
+
+    .sitename{
+        margin-right: auto;
+        margin-left: 12px;
+        margin-top: 2vh;
+        margin-bottom: 5px;
+        text-align: center;
+        color: aliceblue;
+        letter-spacing: 2px;
+        font-size: 22px;
+    }
 }
 
-.sitename{
-    margin-right: auto;
-    margin-left: 5px;
-    margin-top: 2vh;
-    margin-bottom: 5px;
-    text-align: center;
-    color: aliceblue;
-    letter-spacing: 2px;
-    font-size: 22px;
-}
+
 
 .nav-active{
     transform: translateX(0%);
